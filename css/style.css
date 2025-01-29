@@ -8,9 +8,6 @@
 .home{
     display:flex;
     gap: 50px;
-    border: 1px solid;
-    padding: 32px;
-    border-radius: 15px;
 }
 .text{
     font-size: 15px;
@@ -18,15 +15,92 @@
 }
 footer{
     text-align: center;
+    font-size: 12px;
 }
 .container-form{
-    text-align:center ;
-    background-color: #F2B28C;
+    text-align:left ;
+    margin: 10px;
+    color: #FFFFFF;
+    background-color: #0C356A;
     padding: 15px;
     border-radius: 15px;
 }
-body{
-    background: #FFEBB4;
-    font-family: 'poppins', Arial;
-    color: #6A2C70;
+.jeniskelamin{
+    text-align: center;
 }
+.flex{
+justify-content: center;
+}
+.form-group{
+    margin: 10px;
+    border-radius: 10px;
+}
+body{
+    background: #FFFFFF;
+    font-family: 'poppins';
+    color: #0C356A;
+    display: inline-block;
+    margin: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+    .home{
+        flex-direction: column;
+    }
+}
+
+.judul{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #0C356A;
+    display: block;
+    background-color: #f8f8f8; 
+    border-radius: 5px;
+}
+p{
+    margin: 10px;
+}
+button{
+    text-align: center;
+    background-color: #FFC436;
+    color: #0C356A;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'poppins';
+
+}
+.keunggulan{
+text-align: center;
+color: white;
+border-radius: 15px;
+background-color: #0C356A;
+margin: 10px;
+padding: 10px;
+
+}
+.container {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Mengatur jarak antara item */
+    align-items: flex-start; /* Menyelaraskan item di bagian atas */
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-between; /* Untuk memberi jarak antara kedua section */
+    gap: 20px; /* Menambahkan jarak antara elemen */
+    align-items: flex-start; /* Menyesuaikan tinggi elemen agar sejajar */
+}
+
+.hasil, .symtomn {
+    flex: 1; /* Membuat kedua elemen memiliki lebar yang sama */
+    padding: 20px;
+}
+.result{
+    font-size: 20px;
+}
+
+
