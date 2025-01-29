@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css\style.css">
+    <title>Calculator BMI</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    
+    <!--header-->
+    <header>
+        <h1>Kalkulator BMI</h1>
+    </header>
+    <!--end of header-->
+    <!--content-->
+    <main class="home" id="keunggulan">
+        <section>
+            <!--scroll content-->
+            <article>
+                <p>Selamat Datang di Kalkulator BMI Kami!
+                    Apakah Anda ingin tahu apakah berat badan Anda berada dalam kisaran yang sehat? Dengan kalkulator Indeks Massa Tubuh (BMI) kami, Anda dapat dengan mudah mengetahui status kesehatan Anda dalam hitungan detik.</p>
+            </article>
+            
+            <!--form-->
+            <form class="container-form" id="bmiForm">
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Jenis Kelamin:</label>
+                    <div class="flex items-center space-x-4">
+                        <label><input type="radio" name="gender" value="Pria" class="mr-2">Pria</label>
+                        <label><input type="radio" name="gender" value="Wanita" class="mr-2">Wanita</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input-berat-badan">Berat badan (kg)</label>
+                    <input type="number" id="input-berat-badan" name="berat_badan" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-usia">Usia (tahun)</label>
+                    <input type="number" id="input-usia" name="usia" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-tinggi-badan">Tinggi badan (cm)</label>
+                    <input type="number" id="input-tinggi-badan" name="tinggi_badan" required>
+                </div>  
+                <button type="button" id="calculateBMI">Hasil Perhitungan</button>
+                <button type="reset">Reset</button>
+            </form>
+            <p>Hasil dari kalkulator BMI dapat menunjukkan seberapa ideal proporsi dari tubuh anda. dengan beberapa index hasil yang akan menunjukkan kategori tubuh anda seperti nilai 18,5 menunjukkan berat badan anda kurang. lalu 18,5 - 24,9 maka berat badan anda normal. Diatas dari 25 - 30 menunjukkan bahwa anda kelebihan berat badan dan di anjurkan untuk melakukan diet dan diatas 30 maka anda mengalami obesitas.</p>
+            <!--end of form-->
+            <article>
+                <header>
+                    <h2>Keunggulan </h2>
+                </header>
+                <p>Aplikasi Kalkulator BMI ini dirancang untuk memberikan hasil yang cepat, akurat, dan mudah dipahami. Dengan memasukkan data sederhana seperti berat dan tinggi badan, Anda dapat langsung mengetahui status kesehatan Anda berdasarkan kategori BMI. Selain itu, aplikasi ini dilengkapi dengan informasi bermanfaat untuk membantu Anda menjaga berat badan ideal dan gaya hidup sehat. Antarmuka yang ramah pengguna memastikan pengalaman yang nyaman untuk semua kalangan! 💪</p>
+            </article>
+            <section id="resultSection">
+                <h2>Hasil Kalkulasi</h2>
+                <span class="result" id="result-BMI">0</span>
+                <p id="bmiCategory"></p>
+            
+            </section>
+        </section>
+        
+        <section>
+            <header><h3>Beberapa Diagnosa Penyakit Kegemukan</h3></header>
+            <div class="text">
+                <p>Diabetes</p>
+                <p>Hipertensi</p>
+                <p>Sakit Jantung</p>
+                <p>Osteoarthitis</p>
+            </div>
+        </section>
+    </main>
+    <!--end of content-->
+
+    <!--footer-->
+    <footer class="footer">Made by Shafacarmelia23@upi.edu</footer>
+    <!--end of footer-->
+
 </body>
 </html>

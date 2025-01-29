@@ -1,0 +1,32 @@
+.form-group {
+        display: flex;
+        flex-direction: column;
+    }
+.result{
+   font-size: 50px;
+}
+.home{
+    display:flex;
+    gap: 50px;
+    border: 1px solid;
+    padding: 32px;
+    border-radius: 15px;
+}
+.text{
+    font-size: 15px;
+    text-align: center; 
+}
+footer{
+    text-align: center;
+}
+.container-form{
+    text-align:center ;
+    background-color: #F2B28C;
+    padding: 15px;
+    border-radius: 15px;
+}
+body{
+    background: #FFEBB4;
+    font-family: 'poppins', Arial;
+    color: #6A2C70;
+}
