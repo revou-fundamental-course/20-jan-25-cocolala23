@@ -102,5 +102,22 @@ padding: 10px;
 .result{
     font-size: 20px;
 }
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+.halodoc-logo {
+    width: 100px; 
+    height: auto;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
 
+.halodoc-logo:hover {
+    transform: scale(1.1); 
+}
 
