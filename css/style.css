@@ -83,20 +83,20 @@ padding: 10px;
 
 }
 .container {
-    display: flex; /* Menggunakan flexbox */
-    justify-content: space-between; /* Mengatur jarak antara item */
-    align-items: flex-start; /* Menyelaraskan item di bagian atas */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
 }
 
 .result-container {
     display: flex;
-    justify-content: space-between; /* Untuk memberi jarak antara kedua section */
-    gap: 20px; /* Menambahkan jarak antara elemen */
-    align-items: flex-start; /* Menyesuaikan tinggi elemen agar sejajar */
+    justify-content: space-between; 
+    gap: 20px; 
+    align-items: flex-start; 
 }
 
 .hasil, .symtomn {
-    flex: 1; /* Membuat kedua elemen memiliki lebar yang sama */
+    flex: 1; 
     padding: 20px;
 }
 .result{

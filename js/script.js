@@ -1,3 +1,4 @@
+//daftar penyakit
 const DISEASES = {
     UNDERWEIGHT: [
         'Anemia',
@@ -22,14 +23,14 @@ const DISEASES = {
         'Osteoarthritis'
     ],
 };
-
+//ketentuan berat badan
 const BMI_CATEGORIES = {
     UNDERWEIGHT: 'Kekurangan berat badan',
     NORMAL: 'Normal (ideal)',
     OVERWEIGHT: 'Kelebihan berat badan',
     OBESITY: 'Kegemukan (Obesitas)'
 };
-
+//rumus
 document.getElementById("calculateBMI").addEventListener("click", function(event) {
     event.preventDefault();
 
@@ -50,7 +51,8 @@ document.getElementById("calculateBMI").addEventListener("click", function(event
     let category = "";
     let recommendation = "";
     let diseases = [];
-
+    
+//saran tiap berat badan
     if (jenisKelamin === "pria") {
         if (bmi < 18.5) {
             category = BMI_CATEGORIES.UNDERWEIGHT;
